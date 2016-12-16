@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="application-name" content="CSS Concepts">
+        <meta name="description" content="Fun with CSS">
+        <meta name="keywords" content="HTML,CSS,101,Concepts">
+        <meta name="author" content="Deep Aggarwal">
+        <title>CSS Concepts</title>
+
+        <link type="text/css" href="style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Box Model</h1>
+        <h4>CSS box model is a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.</h4>
+        <div class="bm-common" id="bm-margin">
+            Margin
+            <div class="bm-common" id="bm-border">
+                Border
+                <div class="bm-common" id="bm-padding">
+                    Padding
+                    <div class="bm-common" id="bm-content">
+                        Content
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1>Layout: <code>display</code></h1>
+        <h4><code>&ltdiv&gt</code> element is block element by default. Three <code>&ltdiv&gt</code> elements as inlined; <code>display: inline</code></h4>
+        <div class="inline-list">div1</div>
+        <div class="inline-list">div2</div>
+        <div class="inline-list">div3</div>
+        <p><strong>NOTE:</strong> We cannot customize width or height of these divs; a drawback of inline display property.</p>
+        <hr>
+
+        <h4><code>&ltspan&gt</code> element is inline element by default. Three <code>&ltspan&gt</code> elements as block elements; <code>display: block</code></h4>
+        <span class="span-as-block">span1</span>
+        <span class="span-as-block">span2</span>
+        <span class="span-as-block">span3</span>
+        <hr>
+
+        <h4><code>&ltdiv&gt</code> element is block element by default. Three <code>&ltdiv&gt</code> elements as block-inlined; <code>display: inline-block</code></h4>
+        <span class="div-as-inline-block">div1</span>
+        <span class="div-as-inline-block">div2</span>
+        <span class="div-as-inline-block">div3</span>
+        <p><strong>NOTE:</strong> We can customize width or height of these divs. See the difference is size as compared to the <code>display: inline</code></p>
+        <hr>
+
+
+    </body>
+</html>
