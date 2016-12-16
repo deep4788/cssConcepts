@@ -47,6 +47,52 @@
         <p><strong>NOTE:</strong> We can customize width or height of these divs. See the difference is size as compared to the <code>display: inline</code></p>
         <hr>
 
+        <h1>Positioning: <code>float</code></h1>
+        <div id="positioning">
+            <img id="imgLeft" src="http://placehold.it/100x100/000/fff?text=FloatLeft">
+            <img id="imgRight" src="http://placehold.it/100x100/000/fff?text=FloatRight">
+            <p>This is the content between two images, one <code>float</code>ing on left and other <code>float</code>ing on right. Now in the next few examples you will see how to make this text after the images and not in-between them or only after one of them but floating next to the other.</p>
+        </div>
+        <hr>
+
+        <div id="positioning">
+            <img id="imgLeft" src="http://placehold.it/100x100/000/fff?text=FloatLeft">
+            <img id="imgRight" src="http://placehold.it/100x140/000/fff?text=FloatRight">
+            <p id="clear-the-left-image">This is the content that is after the left image, but floating next to the right image.</p>
+        </div>
+        <hr>
+
+        <div id="positioning">
+            <img id="imgLeft" src="http://placehold.it/100x140/000/fff?text=FloatLeft">
+            <img id="imgRight" src="http://placehold.it/100x100/000/fff?text=FloatRight">
+            <p id="clear-the-right-image">This is the content that is after the right image, but floating next to the left image.</p>
+        </div>
+        <hr>
+
+        <div id="positioning">
+            <img id="imgLeft" src="http://placehold.it/100x100/000/fff?text=FloatLeft">
+            <img id="imgRight" src="http://placehold.it/100x100/000/fff?text=FloatRight">
+            <p id="clear-both-image">This is the content that is after both left and right images.</p>
+        </div>
+        <hr>
+
+        <div id="outer-div">
+            Outer div
+            <div id="inner-div">
+                Inner div is positioned relative to its parent div and is moved few pixels to the right
+            </div>
+        </div>
+        <hr>
+
+        <div id="absolute-div">Absolute div</div>
+        <div id="fixed-div">Fixed div</div>
+
+        <div id="outer-div-relative">
+            Outer div positioned few pixels right relative to its normal position
+            <div id="inner-div-absolute">
+                Inner div is positioned absolute to its parent div which is positioned relative
+            </div>
+        </div>
 
     </body>
 </html>

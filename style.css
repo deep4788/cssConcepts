@@ -70,3 +70,76 @@ h1 {
     height: 50px;
     width: 50px;
 }
+
+#positioning {
+    width: 30%;
+}
+
+#imgLeft {
+    float: left;
+}
+
+#imgRight {
+    float: right;
+}
+
+#clear-the-left-image {
+    clear: left;
+}
+
+#clear-the-right-image {
+    clear: right;
+}
+
+#clear-both-image {
+    clear: both;
+}
+
+#outer-div, #inner-div {
+    border-color: #000;
+    border-style: solid;
+    border-width: 2px;
+    width: 30%;
+}
+
+#inner-div {
+    position: relative;
+    left: 50px;
+}
+
+#absolute-div {
+    position: absolute;
+    border-color: #000;
+    border-style: solid;
+    border-width: 2px;
+    top: -5px;
+    right: 0;
+    padding: 30px;
+}
+
+#fixed-div {
+    position: fixed;
+    border-color: #000;
+    border-style: solid;
+    border-width: 2px;
+    right: 0;
+    bottom: 0;
+    background: green;
+}
+
+#outer-div-relative {
+    border-color: #000;
+    border-style: solid;
+    border-width: 2px;
+    position: relative;
+    left: 50px;
+    width: 30%;
+}
+#inner-div-absolute {
+    border-color: #000;
+    border-style: solid;
+    border-width: 2px;
+    position: absolute;
+    left: 50px;
+
+}
