@@ -2,6 +2,10 @@ h1 {
     background: #B0C4DE;
 }
 
+code {
+    font-size: 15px;
+}
+
 /* Box Model */
 #bm-margin {
     border-color: #000;
@@ -146,6 +150,7 @@ h1 {
     top: 29px;
 }
 
+/* Circle */
 .circle {
     position: relative;
     display: block;
@@ -157,4 +162,91 @@ h1 {
     text-align: center;
     line-height: 200px;
     top: 40px;
+    margin-bottom: 70px;
+}
+
+/* Background */
+.bg-properties, .bg-properties2, .bg-properties3, .bg-properties4 {
+    border-color: #000;
+    border-style: solid;
+    border-width: 2px;
+    right: 0;
+    bottom: 0;
+    padding: 30px;
+    width: 50%;
+    background-color: orange;
+    background-attachment: scroll;
+}
+
+.bg-properties {
+    background-image: url("http://placehold.it/100x100");
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.bg-properties2 {
+    background-image: url("http://placehold.it/50x50");
+    background-repeat: repeat-y;
+    background-position: left top;
+}
+
+.bg-properties3 {
+    background-image: url("http://placehold.it/50x50");
+    background-repeat: repeat;
+    background-position: left top;
+}
+
+.bg-properties4 {
+    background-color: purple;
+    background-image: url("http://placehold.it/50x50");
+    background-repeat: repeat-x;
+    background-position: left top;
+}
+
+/* Text */
+.text-properties, .text-properties2, .text-properties3, .text-properties4, .text-properties5 {
+    border-color: #000;
+    border-style: solid;
+    border-width: 2px;
+    right: 0;
+    bottom: 0;
+    padding: 30px;
+    width: 50%;
+}
+
+.text-properties {
+    color: green;
+    direction: ltr;
+    letter-spacing: 4px;
+    line-height: 5px;
+    text-align: left;
+    text-decoration: overline;
+    text-shadow: 2px 2px #ff0000;
+}
+
+.text-properties2 {
+    color: blue;
+    direction: rtl;
+    letter-spacing: -2px;
+    line-height: 25px;
+    text-decoration: line-through;
+}
+
+.text-properties3 {
+    color: blue;
+    letter-spacing: 13px;
+    line-height: 45px;
+    text-align: right;
+    text-decoration: underline;
+}
+
+.text-properties4 {
+    color: pink;
+    line-height: 3px;
+}
+
+.text-properties5 {
+    text-indent: 75px;
+    text-transform: uppercase;
+    word-spacing: 20px;
 }
