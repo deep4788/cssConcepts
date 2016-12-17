@@ -250,3 +250,32 @@ code {
     text-transform: uppercase;
     word-spacing: 20px;
 }
+
+.font-properties, .font-properties2, .font-properties3 {
+    border-color: #000;
+    border-style: solid;
+    border-width: 2px;
+    right: 0;
+    bottom: 0;
+    padding: 30px;
+    width: 50%;
+}
+
+.font-properties {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+.font-properties2 {
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 7px;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.font-properties3 {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight: bolder;
+}
