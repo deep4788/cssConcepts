@@ -1,5 +1,6 @@
 h1 {
-    background: #B0C4DE;
+    background: #000;
+    color: #7FFFD4;
 }
 
 code {
@@ -339,4 +340,15 @@ code {
 .div-before-after p::after {
     content: "AFTER CONTENT";
     color: red;
+}
+
+/* CSS Attribute Selectors */
+.attribute-selectors a[target] {
+    background-color: yellow;
+}
+.attribute-selectors a[target="_top"] {
+    background-color: yellow;
+}
+.attribute-selectors img[title~="flower"] {
+    border: 5px solid yellow;
 }

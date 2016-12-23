@@ -12,9 +12,10 @@ A CSS tutorial covering some important and essential concepts.
 - Text: <code>color, direction, letter-spacing, line-height, text-align, text-decoration, text-indent, text-shadow, text-transform, word-spacing</code></h1>
 - Font: <code>font-family, font-size, font-style, font-variant, font-weight</code></h1>
 - Overflow <code>overflow: visible||hidden||scroll||auto</code></h1>
-- CSS Combinators: space (div p), > (div > p), + (div + p), ~ (div ~ p)
+- CSS Combinators: <code>space (div p), > (div > p), + (div + p), ~ (div ~ p)</code>
 - Pseudo-classes: <code>selector:pseudo-class {}</code>
 - Pseudo-elements: <code>selector::pseudo-element {}</code>
+- CSS Attribute Selectors: <code>[attribute]</code>
 
 #### *TODO: There are some other interesting topics to be covered here ...*
 - opacity
