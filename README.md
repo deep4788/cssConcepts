@@ -19,8 +19,25 @@ A CSS tutorial covering some important and essential concepts.
 
 #### *TODO: There are some other interesting topics to be covered here ...*
 - opacity
-- css3 topics
-- etc.
+- making dropdown
+- making navigation bar
+- box sizing
+- rounded corners
+- border images
+- backgrounds
+- gradients
+- shadows
+- 2D Transforms
+- 3D Transforms
+- transitions
+- animations
+- images
+- buttons
+- pagination
+- multiple columns
+- user interface
+- flexbox
+- media Queries
 
 Author
 ------
