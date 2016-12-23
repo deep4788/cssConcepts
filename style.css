@@ -17,7 +17,6 @@ code {
     padding-right: 30px;
     background: #F0F8FF;
 }
-
 #bm-border {
     border-color: #5F9EA0;
     border-style: solid;
@@ -27,7 +26,6 @@ code {
     padding-right: 10px;
     background: #5F9EA0;
 }
-
 #bm-padding {
     border-color: #5F9EA0;
     border-style: solid;
@@ -37,14 +35,12 @@ code {
     padding-right: 30px;
     background: #F0F8FF;
 }
-
 #bm-content {
     border-color: #000;
     border-style: dotted;
     padding: 20px 30px;
     background: white;
 }
-
 .bm-common {
     border-width: 2px;
     border-radius: 5px;
@@ -55,62 +51,57 @@ code {
 .inline-list {
     display: inline;
 }
-
 .span-as-block {
     display: block;
     margin: 3px;
     width: 30%;
 }
-
 .inline-list, .span-as-block, .div-as-inline-block {
     border-width: 2px;
     border-color: #000;
     border-style: solid;
     padding: 10px;
 }
-
 .div-as-inline-block {
     display: inline-block;
     height: 50px;
     width: 50px;
 }
-
-#positioning {
+.positioning, .clearfix {
+    border: 2px solid #73AD21;
     width: 30%;
 }
-
-#imgLeft {
+.clearfix {
+    content: "";
+    clear: both;
+    display: table;
+}
+.imgLeft {
     float: left;
 }
-
-#imgRight {
+.imgRight {
     float: right;
 }
-
 #clear-the-left-image {
     clear: left;
 }
-
 #clear-the-right-image {
     clear: right;
 }
-
 #clear-both-image {
     clear: both;
 }
-
 #outer-div, #inner-div {
+    clear: both;
     border-color: #000;
     border-style: solid;
     border-width: 2px;
     width: 30%;
 }
-
 #inner-div {
     position: relative;
     left: 50px;
 }
-
 #absolute-div {
     position: absolute;
     border-color: #000;
@@ -121,7 +112,6 @@ code {
     padding: 30px;
     background: yellow;
 }
-
 #fixed-div {
     position: fixed;
     border-color: #000;
@@ -132,7 +122,6 @@ code {
     padding: 30px;
     background: pink;
 }
-
 #outer-div-relative {
     border-color: #000;
     border-style: solid;
@@ -177,25 +166,21 @@ code {
     background-color: orange;
     background-attachment: scroll;
 }
-
 .bg-properties {
     background-image: url("http://placehold.it/100x100");
     background-repeat: no-repeat;
     background-position: right top;
 }
-
 .bg-properties2 {
     background-image: url("http://placehold.it/50x50");
     background-repeat: repeat-y;
     background-position: left top;
 }
-
 .bg-properties3 {
     background-image: url("http://placehold.it/50x50");
     background-repeat: repeat;
     background-position: left top;
 }
-
 .bg-properties4 {
     background-color: purple;
     background-image: url("http://placehold.it/50x50");
@@ -213,7 +198,6 @@ code {
     padding: 30px;
     width: 50%;
 }
-
 .text-properties {
     color: green;
     direction: ltr;
@@ -223,7 +207,6 @@ code {
     text-decoration: overline;
     text-shadow: 2px 2px #ff0000;
 }
-
 .text-properties2 {
     color: blue;
     direction: rtl;
@@ -231,7 +214,6 @@ code {
     line-height: 25px;
     text-decoration: line-through;
 }
-
 .text-properties3 {
     color: blue;
     letter-spacing: 13px;
@@ -239,18 +221,15 @@ code {
     text-align: right;
     text-decoration: underline;
 }
-
 .text-properties4 {
     color: pink;
     line-height: 3px;
 }
-
 .text-properties5 {
     text-indent: 75px;
     text-transform: uppercase;
     word-spacing: 20px;
 }
-
 .font-properties, .font-properties2, .font-properties3 {
     border-color: #000;
     border-style: solid;
@@ -260,22 +239,104 @@ code {
     padding: 30px;
     width: 50%;
 }
-
 .font-properties {
     font-family: "Comic Sans MS", cursive, sans-serif;
     font-size: 30px;
     font-style: italic;
     font-variant: small-caps;
 }
-
 .font-properties2 {
     font-family: Impact, Charcoal, sans-serif;
     font-size: 7px;
     font-style: oblique;
     font-weight: bold;
 }
-
 .font-properties3 {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-weight: bolder;
+}
+
+/* Overflow */
+.overflow-visible, .overflow-hidden, .overflow-scroll, .overflow-auto {
+    background-color: #eee;
+    width: 200px;
+    height: 50px;
+    border: 1px dotted black;
+}
+.overflow-hidden {
+    overflow: hidden;
+}
+.overflow-scroll {
+    overflow: scroll;
+}
+.overflow-auto {
+    overflow: auto;
+}
+.overflow-visible {
+    overflow: visible;
+    margin-bottom: 55px;
+}
+
+/* CSS Combinators */
+.css-combinators {
+    width: 500px;
+
+}
+.css-combinators div p {
+        background-color: yellow;
+}
+.css-combinators div > p {
+        background-color: green;
+}
+.css-combinators div ~ p {
+        background-color: pink;
+}
+.css-combinators div + p {
+        background-color: red;
+}
+
+/* Pseudo Classes */
+.pseudo-classes, .anchor-active {
+    background-color: #DEB887;
+    border: 2px solid #8A2BE2;
+    padding: 15px;
+    width: 20%;
+}
+.pseudo-classes:hover {
+    background-color: #5F9EA0;
+}
+.anchor-active a:active {
+    background-color: yellow;
+}
+.input-focus {
+    background-color: #DEB887;
+    border: 2px solid #8A2BE2;
+    width: 50%;
+}
+.input-focus input:focus {
+    background-color: yellow;
+}
+
+/* Pseudo Elements */
+.div-first-line, .div-first-letter, .div-before-after {
+    background-color: #DEB887;
+    border: 2px solid #8A2BE2;
+    padding: 10px;
+    width: 50%;
+}
+.div-first-line::first-line {
+    color: green;
+    font-variant: small-caps;
+}
+.div-first-letter::first-letter {
+    color: #ff0000;
+    font-size: xx-large;
+}
+.div-before-after p::before {
+    content: "BEFORE CONTENT";
+    color: green;
+}
+.div-before-after p::after {
+    content: "AFTER CONTENT";
+    color: red;
 }
